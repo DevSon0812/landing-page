@@ -15,6 +15,7 @@ export default function HomePage() {
       <SectionProducts
         title="Properties for sale"
         subTitle="Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer vel lobortis justo"
+        type="large"
       />
     </main>
   );

@@ -3,6 +3,7 @@ import Link from "next/link";
 import AuthorImage from "../../assets/images/author.jpg";
 import CardImage from "../../assets/images/home1.jpg";
 import { CustomImage } from "../../compound/customImage/index";
+import { MdAdd, SiClubhouse } from "../../compound/icons/index";
 
 export const Card = ({
   id,
@@ -15,7 +16,10 @@ export const Card = ({
   sqft,
 }: ProductsProps) => {
   return (
-    <div className="p-[17px] rounded-2xl shadow-sm overflow-hidden " key={id}>
+    <div
+      className="p-[17px] bg-white rounded-2xl shadow-sm overflow-hidden "
+      key={id}
+    >
       <div className="overflow-hidden max-h-[226.76px] w-full rounded-2xl hover:bg-gradient-image ">
         <CustomImage
           src={CardImage}
@@ -30,8 +34,10 @@ export const Card = ({
         >
           {name}
         </Link>
-        <div className="flex items-center gap-2 text-12 mb-[21px]">
-          <span>a</span>
+        <div className="flex items-center gap-1 text-12 mb-[21px]">
+          <span>
+            <SiClubhouse size={16} />
+          </span>
           {address}
         </div>
         <p className="text-18 font-bold mb-[21px] text-yellow">${price}00</p>
@@ -49,7 +55,9 @@ export const Card = ({
           </p>
         </div>
         <div className="flex items-center justify-between pt-[17px]">
-          <div className="flex items-center gap-2 text-14">Compare</div>
+          <div className="flex items-center gap-1 text-14">
+            <MdAdd className="text-yellow font-bold" size={16} /> Compare
+          </div>
           <div className="w-10 h-10">
             <CustomImage
               src={AuthorImage}

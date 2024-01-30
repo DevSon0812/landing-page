@@ -7,11 +7,7 @@
 }
 .swiper-wrapper {
   cursor: grab !important;
-  transition: transform 1.2s ease 0s !important;
-}
-
-.swiper-slide {
-  padding-right: 30px !important;
+  transition: transform 1s ease 0s !important;
 }
 
 .swiper-pagination {

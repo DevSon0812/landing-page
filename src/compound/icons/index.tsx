@@ -4,10 +4,12 @@ import { CgMail } from "react-icons/cg";
 import { FcEmptyFilter } from "react-icons/fc";
 import { FiInstagram } from "react-icons/fi";
 import { IoCallOutline, IoHomeOutline, IoSearchSharp } from "react-icons/io5";
-import { MdKeyboardArrowDown } from "react-icons/md";
+import { MdAdd, MdKeyboardArrowDown } from "react-icons/md";
 import { RiArrowRightDownLine } from "react-icons/ri";
+import { SiClubhouse } from "react-icons/si";
 import { TfiTwitter } from "react-icons/tfi";
 import { TiSocialFacebook } from "react-icons/ti";
+
 export {
   BiLogoLinkedinSquare,
   BsPersonGear,
@@ -16,9 +18,8 @@ export {
   FiInstagram,
   IoCallOutline,
   IoHomeOutline,
-  IoSearchSharp,
-  MdKeyboardArrowDown,
-  RiArrowRightDownLine,
-  TfiTwitter,
-  TiSocialFacebook,
+  IoSearchSharp, MdAdd, MdKeyboardArrowDown,
+  RiArrowRightDownLine, SiClubhouse, TfiTwitter,
+  TiSocialFacebook
 };
+

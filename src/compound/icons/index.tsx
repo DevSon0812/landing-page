@@ -5,6 +5,7 @@ import { FcEmptyFilter } from "react-icons/fc";
 import { FiInstagram } from "react-icons/fi";
 import { IoCallOutline, IoHomeOutline, IoSearchSharp } from "react-icons/io5";
 import { MdKeyboardArrowDown } from "react-icons/md";
+import { RiArrowRightDownLine } from "react-icons/ri";
 import { TfiTwitter } from "react-icons/tfi";
 import { TiSocialFacebook } from "react-icons/ti";
 export {
@@ -17,6 +18,7 @@ export {
   IoHomeOutline,
   IoSearchSharp,
   MdKeyboardArrowDown,
+  RiArrowRightDownLine,
   TfiTwitter,
   TiSocialFacebook,
 };

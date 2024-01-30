@@ -1,34 +1,10 @@
+"use client";
 import { Card } from "@/components/card/Card";
+import { DATA_PRODUCTS } from "@/ustils/constants";
 import { map } from "lodash";
+import { CATEGORIES } from "./constants";
 
 export const FeaturedProducts = () => {
-  const CATEGORIES = [
-    {
-      id: 1,
-      category: "House",
-    },
-    {
-      id: 2,
-      category: "Smart home",
-    },
-    {
-      id: 3,
-      category: "Apartments",
-    },
-    {
-      id: 4,
-      category: "Office",
-    },
-    {
-      id: 5,
-      category: "Villa",
-    },
-    {
-      id: 6,
-      category: "Bungalow",
-    },
-  ];
-
   return (
     <section className="w-full py-[71px] container px-4">
       <div className="text-center pb-10 text-primary">
@@ -52,15 +28,20 @@ export const FeaturedProducts = () => {
           ))}
         </div>
       </div>
-      <div className="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-8">
-        <Card />
-        <Card />
-        <Card />
-        <Card />
-        <Card />
-        <Card />
-        <Card />
-        <Card />
+      <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 gap-8">
+        {map(DATA_PRODUCTS, (product) => (
+          <Card
+            key={product.id}
+            id={product.id}
+            name={product.name}
+            price={product.price}
+            address={product.address}
+            baths={product.baths}
+            beds={product.beds}
+            create_at={product.create_at}
+            sqft={product.sqft}
+          />
+        ))}
       </div>
     </section>
   );

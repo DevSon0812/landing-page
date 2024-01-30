@@ -66,8 +66,8 @@ export const Banner = () => {
   }, []);
 
   return (
-    <section className=" w-full py-20 bg-skin">
-      <div className="container">
+    <section className=" w-full py-20 bg-skin -z-[1]">
+      <div className="container  -z-[1]">
         <div className=" px-4 lg:pl-4 lg:pr-0 flex items-center justify-between ">
           <div className="w-full max-w-full lg:max-w-[654px] ">
             <h2 className="text-[46px] lg:text-[60px] font-bold leading-[46px] lg:leading-[70px] mb-[22px]">
@@ -151,7 +151,7 @@ export const Banner = () => {
 
               {/* Modal select cho Property */}
               {showOptions && (
-                <div className="absolute top-[125px] h-[155px] custom-scrollbar overflow-x-auto left-[271px] bg-white w-[276px]  border-[1px] rounded-md">
+                <div className="absolute top-[125px] h-[155px] custom-scrollbar overflow-x-auto left-[278px] bg-white w-[240px]  border-[1px] rounded-md">
                   {optionsProperty.map((option, index) => (
                     <div
                       key={index}
@@ -172,7 +172,7 @@ export const Banner = () => {
 
               {/* Modal select cho Location */}
               {showOptionsLocations && (
-                <div className="absolute top-[124px] h-[155px] custom-scrollbar overflow-x-auto right-[247px] bg-white w-[272px]  border-[1px] rounded-md">
+                <div className="absolute top-[124px] h-[155px] custom-scrollbar overflow-x-auto right-[276px] bg-white w-[240px]  border-[1px] rounded-md">
                   {optionsLocations.map((option, index) => (
                     <div
                       key={index}

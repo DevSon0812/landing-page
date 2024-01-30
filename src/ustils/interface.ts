@@ -1,9 +1,12 @@
 export interface ProductsProps {
-  nameProduct: string;
-  image: string;
-  location: string;
+  id?: number;
+  name: string;
+  address: string;
   price: number;
-  createAt: string;
+  beds: number;
+  baths: number;
+  sqft: number;
+  create_at: number;
 }
 
 export interface SectionProductsProps {

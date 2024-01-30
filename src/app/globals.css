@@ -9,7 +9,7 @@ html {
 }
 
 .container {
-  @apply h-full w-full max-w-[1300px] mx-auto;
+  @apply h-full w-full max-w-[1500px] mx-auto;
 }
 
 input {
@@ -42,6 +42,21 @@ image {
   border-radius: 6px;
 }
 
-.bg-gradient-image {
-  background: linear-gradient(to bottom, rgba(0, 0, 0, 0), rgba(0, 0, 0, 0.7));
+.bg-overlay {
+  background: rgba(0, 0, 0, 0.1);
+}
+
+.bg-overlay-hover {
+  background: rgba(0, 0, 0, 0.25);
+}
+
+.show {
+  opacity: 1;
+  visibility: visible;
+}
+
+.hide {
+  opacity: 0;
+  visibility: hidden;
+  transition: all 0.2s ease;
 }

@@ -15,6 +15,10 @@ export default function HomePage() {
       <SectionProducts
         title="Properties for sale"
         subTitle="Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer vel lobortis justo"
+      />
+      <SectionProducts
+        title="Properties for rent"
+        subTitle="Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer vel lobortis justo"
         type="large"
       />
     </main>

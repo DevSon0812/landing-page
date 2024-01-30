@@ -63,7 +63,7 @@ export const SectionProducts = ({
           pagination={{
             clickable: true,
           }}
-          autoplay={{ delay: 2500 }}
+          autoplay={{ delay: 3500 }}
           spaceBetween={30}
           modules={[Pagination, Navigation, Autoplay]}
           breakpoints={breakpoints}

@@ -79,4 +79,4 @@ export const DATA_PRODUCTS = [
     sqft: 1204,
     create_at: 3,
   },
-];
+] as const;

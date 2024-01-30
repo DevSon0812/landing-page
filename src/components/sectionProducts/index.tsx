@@ -1,11 +1,8 @@
 "use client";
-
-// Import Swiper React components
-import { Swiper, SwiperSlide } from "swiper/react";
-//  Swiper
 import { DATA_PRODUCTS } from "@/ustils/constants";
 import { map } from "lodash";
 import { Autoplay, Navigation, Pagination } from "swiper";
+import { Swiper, SwiperSlide } from "swiper/react";
 import { Card } from "../card/Card";
 
 interface SectionProductsProps {
@@ -15,7 +12,7 @@ interface SectionProductsProps {
 
 export const SectionProducts = ({ title, subTitle }: SectionProductsProps) => {
   return (
-    <section className="overflow-hidden py-20">
+    <section className="overflow-hidden py-16">
       <div className="text-center pb-10 text-primary">
         <h4 className="text-45 text-primary font-bold leading-[54px] ">
           {title}
@@ -25,10 +22,10 @@ export const SectionProducts = ({ title, subTitle }: SectionProductsProps) => {
       {/* list items */}
       <div>
         <Swiper
-          spaceBetween={30}
-          loop
-          pagination={{ clickable: true }}
-          autoplay={{ delay: 500 }}
+          pagination={{
+            clickable: true,
+          }}
+          autoplay={{ delay: 2500 }}
           modules={[Pagination, Navigation, Autoplay]}
           breakpoints={{
             768: {
@@ -38,7 +35,8 @@ export const SectionProducts = ({ title, subTitle }: SectionProductsProps) => {
               slidesPerView: 3,
             },
           }}
-          className="w-full grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 max-w-[1140px] px-4 pb-[80px]"
+          slidesPerGroup={3}
+          className="w-full grid grid-cols-1  md:grid-cols-2 lg:grid-cols-3 max-w-[1140px] px-4 pb-[80px]"
         >
           {map(DATA_PRODUCTS, (product) => (
             <SwiperSlide key={product.id}>
